@@ -62,9 +62,12 @@ page "/feed.xml", layout: false
 configure :build do
   # Minify CSS on build
   # activate :minify_css
-
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
+  # smarter assets
+  activate :asset_hash
+  activate :css
+  activate :gzip
   activate :relative_assets
 end
 
