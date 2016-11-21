@@ -48,7 +48,7 @@ end
 page "/feed.xml", layout: false
 # Reload the browser automatically whenever files change
 # configure :development do
-#   activate :livereload
+# activate :livereload
 # end
 
 # Methods defined in the helpers block are available in templates
@@ -60,7 +60,7 @@ page "/feed.xml", layout: false
 
 # Build-specific configuration
 configure :build do
-  
+
   # smarter assets
   activate :asset_hash
   activate :minify_javascript
@@ -74,3 +74,5 @@ activate :deploy do |deploy|
   deploy.branch = 'gh-pages'
   deploy.build_before = true
 end
+
+set :relative_links, true
