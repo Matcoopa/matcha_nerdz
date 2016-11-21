@@ -19,3 +19,8 @@ gem "builder", "~> 3.0"
 
 # Deploy
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
+
+# Bourbon setup
+gem 'bourbon'
+gem 'neat'
+gem 'bitters'
